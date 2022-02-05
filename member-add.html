@@ -44,7 +44,7 @@
         <h1 class="display-4">New member</h1>
         <p class="lead text-muted">Add a member~</p>
         <div>
-          <a href="#" class="btn btn-primary my-2">Members list</a>
+          <a href="./member-list.html" class="btn btn-primary my-2">Members list</a>
         </div>
       </div>
     </section>
@@ -69,12 +69,12 @@
                 <span class="d-block mb-2">Member avatar</span>
                 <img class="img-thumbnail w-100" src="./assets/default.png" alt="Member avatar">
               </label>
-              <input type="file" class="form-control-file" id="input_avatar" aria-describedby="input_avatar_label">
+              <input type="file" accept="image/*" class="form-control-file" id="input_avatar" aria-describedby="input_avatar_label">
               <small id="input_avatar_label" class="form-text text-muted">Upload a picture.</small>
             </div>
           </div>
         </div>
-        <button class="btn btn-primary btn-block">Save</button>
+        <button id="save" class="btn btn-primary btn-block">Save</button>
       </form>
     </div>
   </main>
@@ -84,6 +84,11 @@
       <span>this demo &copy; js
         <a class="float-right" href="#">Back to top &uparrow;</a>
     </p>
+<!-- 引入组件库 -->
+    <script src="./js/lib/axios.min.js"></script>
+<!-- 引入页面操作js -->
+    <script src="./js/common.js"></script>
+    <script src="./js/add.js"></script>
   </footer>
 </body>
 
