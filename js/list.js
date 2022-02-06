@@ -24,7 +24,7 @@ function loadList(){
 
 loadList()
 
-// 删除会员
+// 2.删除会员
 let members = document.querySelector('#members')
 members.onclick = function(e){
   if(e.target.classList.contains('text-danger')){
